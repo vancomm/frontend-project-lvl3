@@ -4,6 +4,6 @@
 ### Maintainability
 [![Maintainability](https://api.codeclimate.com/v1/badges/1c1de72eb675033db018/maintainability)](https://codeclimate.com/github/vancomm/frontend-project-lvl3/maintainability)
 
-
+<!-- 
 ### Test Coverage
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1c1de72eb675033db018/test_coverage)](https://codeclimate.com/github/vancomm/frontend-project-lvl3/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1c1de72eb675033db018/test_coverage)](https://codeclimate.com/github/vancomm/frontend-project-lvl3/test_coverage) -->

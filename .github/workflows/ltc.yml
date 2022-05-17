@@ -1,4 +1,4 @@
-name: Lint, Test, Coverage
+name: lint
 
 on:
   push:
@@ -21,30 +21,30 @@ jobs:
       - name: Run linter
         run: make lint
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
 
-      - name: Install
-        run: make install
+  #     - name: Install
+  #       run: make install
         
-      - name: Test
-        run: make test
+  #     - name: Test
+  #       run: make test
       
-  coverage:
-    name: coverage
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+  # coverage:
+  #   name: coverage
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
 
-      - name: Install
-        run: make install
+  #     - name: Install
+  #       run: make install
 
-      - name: Test & publish code coverage
-        uses: paambaati/codeclimate-action@v2.7.5
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          coverageCommand: make test-coverage
-          debug: true
+  #     - name: Test & publish code coverage
+  #       uses: paambaati/codeclimate-action@v2.7.5
+  #       env:
+  #         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+  #       with:
+  #         coverageCommand: make test-coverage
+  #         debug: true
